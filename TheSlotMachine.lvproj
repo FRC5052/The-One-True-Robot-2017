@@ -57,10 +57,10 @@
 		<Property Name="target.IsRemotePanelSupported" Type="Bool">true</Property>
 		<Property Name="target.RTCPULoadMonitoringEnabled" Type="Bool">true</Property>
 		<Property Name="target.RTDebugWebServerHTTPPort" Type="Int">8001</Property>
-		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
+		<Property Name="target.RTTarget.ApplicationPath" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
 		<Property Name="target.RTTarget.EnableFileSharing" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.IPAccess" Type="Str">+*</Property>
-		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">false</Property>
+		<Property Name="target.RTTarget.LaunchAppAtBoot" Type="Bool">true</Property>
 		<Property Name="target.RTTarget.VIPath" Type="Path">/home/lvuser/natinst/bin</Property>
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -672,6 +672,7 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_AnalogModuleDevStatus.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogModule/WPI_AnalogModuleDevStatus.ctl"/>
 				<Item Name="WPI_AnalogModuleDefaults.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/AnalogModule/WPI_AnalogModuleDefaults.vi"/>
 				<Item Name="WPI_GyroChannelToAIChannel.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Gyro/WPI_GyroChannelToAIChannel.vi"/>
+				<Item Name="WPI_EncoderReset.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Encoder/WPI_EncoderReset.vi"/>
 			</Item>
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -706,11 +707,11 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_compilerOptLevel" Type="Int">0</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Gabe Haro/Documents/GitHub/Builds</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Users/RoboLobos/Documents/RobotBuild</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D2136F65-FD06-4AC9-A317-10E44B9EF7A4}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -720,7 +721,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3C9ED5C2-5FCB-4CC8-8ADE-90147AE0C973}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B8E10C93-437D-4E5A-B9C6-30A13255F0DD}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RoboRIO/Robot Main.vi</Property>
